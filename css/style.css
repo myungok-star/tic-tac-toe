@@ -1,7 +1,9 @@
 #board {
   margin-top: 10px;
 }
-
+body {
+  background-color: #4879aa;
+}
 .box {
   border: 1px solid black;
   height: 150px;
