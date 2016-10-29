@@ -1,13 +1,22 @@
 #board {
   margin-top: 10px;
 }
-body {
+/*body {
   background-color: #4879aa;
-}
+  }*/
+
 .box {
   border: 1px solid black;
   height: 150px;
 }
+
+img {
+  width: 150px;
+  height: 140px;
+  margin-left: -14px;
+  margin-top: 3px;
+}
+
 form {
   text-align: center;
   margin: 40px 0;
