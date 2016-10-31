@@ -1,23 +1,52 @@
 #board {
   margin-top: 10px;
+  background-color: rgba(0,0,0,.8);
 }
 /*body {
   background-color: #4879aa;
   }*/
 
 .box {
-  border: 1px solid black;
+  border: 5px solid rgb(244, 140, 66);
   height: 150px;
   cursor: pointer;
 }
-
+.topleft {
+  border-top: 10px solid rgb(244, 140, 66);
+  border-left: 10px solid rgb(244, 140, 66);
+}
+.top {
+  border-top: 10px solid rgb(244, 140, 66);
+}
+.topright {
+  border-top: 10px solid rgb(244, 140, 66);
+  border-right: 10px solid rgb(244, 140, 66);
+}
+.left {
+  border-left: 10px solid rgb(244, 140, 66);
+}
+.right {
+  border-right: 10px solid rgb(244, 140, 66);
+}
+.bottomleft {
+  border-bottom: 10px solid rgb(244, 140, 66);
+  border-left: 10px solid rgb(244, 140, 66);
+}
+.bottom {
+  border-bottom: 10px solid rgb(244, 140, 66);
+}
+.bottomright {
+  border-bottom: 10px solid rgb(244, 140, 66);
+  border-right: 10px solid rgb(244, 140, 66);
+}
 img {
-  width: 150px;
-  height: 140px;
-  margin-top: 3px;
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 0 6px;
 }
 
 form {
   text-align: center;
   margin: 40px 0;
+
 }
