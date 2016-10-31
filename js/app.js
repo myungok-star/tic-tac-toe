@@ -7,8 +7,12 @@ var player = true;
     $(".box").on("click", function() {
         var selectedBox = $(this);
 
+        if (selectedBox.hasClass("hasImg")) {
+          alert ("This box has already been selected, please try a different box!")
+        }
+         
         //alert the user a box that they select has already been selected.
-        if (player) {
+        else if (player) {
                 //display an image of x icon when clicked.
             selectedBox.append('<img src="css/imgs/x.png">');
             selectedBox.addClass("hasImg");
@@ -22,9 +26,7 @@ var player = true;
 
         }
     });
-    if (selectedBox.hasClass("hasImg")) {
-      alert ("This box has already been selected, please try a different box!")
-    }
+
 
 });
 
