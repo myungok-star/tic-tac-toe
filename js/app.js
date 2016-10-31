@@ -2,25 +2,26 @@
 $(document).ready(function() {
 // all code to manipulate the DOM
 // goes inside this function
-  var player = true;
+var player = true;
 
 $(".box").on("click", function(event) {
     var selectedBox = $(this);
-
+    //alert the user a box that they select has already been selected.
     if (seclectedBox.hasClass("xxx") || selectedBox.hasClass("ooo")) {
         alert("This box has been already selected, please select a different box.")
+        // add class to selected boxes so that previously claimed boxed won't be available for selection.
     } else {
-      if (player === true) {
-        selectedBox.addClass("xxx");
-        player = false;
-      } else {
-        selectedBox.addClass("ooo");
-        player = true;
-      }
+        if (player === true) {
+            selectedBox.addClass("xxx");
+            player = false;
+        } else {
+            selectedBox.addClass("ooo");
+            player = true;
+        }
     }
-  })
-  });
+})
 
+});
 
 
 /*    function ticTacToe() {
