@@ -13,7 +13,8 @@ var seven = $("#7")
 var eight = $("#8")
 var nine = $("#9")*/
 
-/*$(".box").on("click", function(){
+/* Testing
+$(".box").on("click", function(){
   $(this).append("it's me!");*
 });*/
 
@@ -32,6 +33,11 @@ function ticTacToe() {
     }
 
 ticTacToe();
+
+
+
+
+
 
 
 
