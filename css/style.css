@@ -8,10 +8,11 @@
 .box {
   border: 1px solid black;
   height: 150px;
-  background-color: blue;
   cursor: pointer;
 }
 
+
+}
 img {
   width: 150px;
   height: 140px;

@@ -4,15 +4,11 @@ $(document).ready(function() {
 // goes inside this function
   var player = true;
 
-/* Testing
-$(".box").on("click", function(){
-  $(this).append("it's me!");*
-*/
 $(".box").on("click", function(event) {
     var selectedBox = $(this);
 
     if (seclectedBox.hasClass("xxx") || selectedBox.hasClass("ooo")) {
-        alert("This box has been already selected, please select another.")
+        alert("This box has been already selected, please select a different box.")
     } else {
       if (player === true) {
         selectedBox.addClass("xxx");
@@ -22,8 +18,8 @@ $(".box").on("click", function(event) {
         player = true;
       }
     }
-})
-});
+  })
+  });
 
 
 
