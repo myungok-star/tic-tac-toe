@@ -2,13 +2,16 @@
   margin-top: 10px;
   background-color: rgba(0,0,0,.8);
 }
-/*body {
-  background-color: #4879aa;
-  }*/
-
+h1 {
+  font-family: 'Coiny', cursive, serif;
+  font-size: 70px;
+}
+#tac {
+  color: rgb(234, 27, 72);
+}
 .box {
   border: 5px solid rgb(244, 140, 66);
-  height: 150px;
+  height: 160px;
   cursor: pointer;
 }
 .topleft {
@@ -42,7 +45,7 @@
 img {
   width: 100px;
   height: 100px;
-  margin: 20px 0 0 6px;
+  margin: 23px 0 0 22px;
 }
 
 form {
