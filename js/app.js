@@ -13,32 +13,59 @@ $(document).ready(function() {
         //alert the user a box that they select has already been selected.
         else if (player) {
             //display an image of x icon when clicked.
+
             selectedBox.append('<img src="css/imgs/x.png">');
             selectedBox.addClass("hasImgX");
-            player = false;
+            var img = "hasImgX";
+            if (whichPlayerWon(img)) {
+                alert("Player X won!")
+            } else {
+                player = false;
+            }
 
         } else {
             //display an image of o icon when clicked.
+
             selectedBox.append('<img src="css/imgs/o.png">');
             selectedBox.addClass("hasImgO");
-            player = true;
+            var img = "hasImgO";
+            if (whichPlayerWon(img)) {
+                alert("Player O won!")
+            } else {
+                player = true;
+            }
+
         }
+
 
         function resetGame() {
             selectedBox.empty();
-            selectedBox.removeClass("hasImg");
+            selectedBox.removeClass("hasImgX");
+            selectedBox.removeClass("hasImgO");
             var player = true;
         }
 
-        /*function whoWon() {
-          if($(".cell1").has)
-        }*/
-
-
-
-
-
-
+        function whichPlayerWon(img) {
+            if ($("#cell1").hasClass(img) && $("#cell2").hasClass(img) && $("#cell3").hasClass(img)) {
+                return true;
+            } else if ($("#cell4").hasClass(img) && $("#cell5").hasClass(img) && $("#cell6").hasClass(img)) {
+                return true;
+            } else if ($("#cell7").hasClass(img) && $("#cell8").hasClass(img) && $("#cell9").hasClass(img)) {
+                return true;
+            } else if ($("#cell1").hasClass(img) && $("#cell4").hasClass(img) && $("#cell7").hasClass(img)) {
+                return true;
+            } else if ($("#cell2").hasClass(img) && $("#cell5").hasClass(img) && $("#cell8").hasClass(img)) {
+                return true;
+            } else if ($("#cell3").hasClass(img) && $("#cell6").hasClass(img) && $("#cell9").hasClass(img)) {
+                return true;
+            } else if ($("#cell1").hasClass(img) && $("#cell5").hasClass(img) && $("#cell9").hasClass(img)) {
+                return true;
+            } else if ($("#cell3").hasClass(img) && $("#cell5").hasClass(img) && $("#cell7").hasClass(img)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
 
 
@@ -47,6 +74,6 @@ $(document).ready(function() {
         });
 
 
-});
+    });
 
 });
