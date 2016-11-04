@@ -18,7 +18,8 @@ $(document).ready(function() {
             selectedBox.addClass("hasImgX");
             var img = "hasImgX";
             if (whichPlayerWon(img)) {
-                alert("Player X won!")
+                alert("Player X won!");
+
             } else {
                 player = false;
             }
@@ -30,7 +31,8 @@ $(document).ready(function() {
             selectedBox.addClass("hasImgO");
             var img = "hasImgO";
             if (whichPlayerWon(img)) {
-                alert("Player O won!")
+                alert("Player O won!");
+                
             } else {
                 player = true;
             }
