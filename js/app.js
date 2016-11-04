@@ -7,20 +7,20 @@ $(document).ready(function() {
     $(".box").on("click", function() {
         var selectedBox = $(this);
 
-        if (selectedBox.hasClass("hasImg")) {
+        if (selectedBox.hasClass("hasImgX") || selectedBox.hasClass("hasImgO")) {
             alert("This box has already been selected, please try a different box!")
         }
         //alert the user a box that they select has already been selected.
         else if (player) {
             //display an image of x icon when clicked.
             selectedBox.append('<img src="css/imgs/x.png">');
-            selectedBox.addClass("hasImg");
+            selectedBox.addClass("hasImgX");
             player = false;
 
         } else {
             //display an image of o icon when clicked.
             selectedBox.append('<img src="css/imgs/o.png">');
-            selectedBox.addClass("hasImg");
+            selectedBox.addClass("hasImgO");
             player = true;
         }
 
@@ -29,34 +29,24 @@ $(document).ready(function() {
             selectedBox.removeClass("hasImg");
             var player = true;
         }
+
+        /*function whoWon() {
+          if($(".cell1").has)
+        }*/
+
+
+
+
+
+
+
+
+
         $("#reset_button").on("click", function() {
             resetGame();
         });
 
-    });
+
 });
 
-
-
-
-
-
-/*    function ticTacToe() {
-        var player = true;
-        $(".box").on("click", function() {
-            if (player) {
-                $(this).append('<img src="css/imgs/o.png">');
-                $(this).addClass("hasImage")
-                player = false;
-            } else {
-                $(this).append('<img src="css/imgs/x.png">');
-                $(this).addClass("hasImage")
-                player = true;
-            }
-        });
-    }
-
-
-
-    ticTacToe();
-    */
+});
